@@ -10,7 +10,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start-dev": "webpack-dev-server",
-    "start": "fastify start server/plugin.js -l info -P"
+    "start": "node server"
   },
   "jest": {
     "transform": {}
