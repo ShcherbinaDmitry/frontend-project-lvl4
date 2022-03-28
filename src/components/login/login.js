@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from './footer.js';
 import Form from './form.js';
-import login from './login.png';
-
+import Logo from './login.jpg';
 
 const LoginPage = () => {
+  console.log('Its alive!');
   return (
     <div className="container-fluid h-100">
       <div className="row justify-content-center align-content-center h-100">
@@ -12,13 +12,11 @@ const LoginPage = () => {
           <div className="card shadow-sm">
             <div className="card-body row p-5">
               <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <img alt="Войти" className="rounded-circle" src={login.png}/>
+                <img alt="Войти" style={{width: '200px', height: '200px'}} className="rounded-circle" src={Logo} />
               </div>
               <Form />
             </div>
-            <div className="card-footer p-4">
-              <Footer /> 
-            </div>
+            <Footer />
           </div>
         </div>
       </div>
@@ -28,3 +26,5 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+<img alt="Войти" style={{width: '200px', height: '200px'}} className="rounded-circle" src="https://cdn2.hexlet.io/assets/toto_mount-97eb429b4c545fb71af1f9dac36116bd15dd73517135117be908c4626b364caa.jpg" />

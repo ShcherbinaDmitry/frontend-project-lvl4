@@ -15,10 +15,15 @@ module.exports = {
     publicPath: '/assets/',
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist', 'public'),
+    },
     compress: true,
     port: 8090,
     host: '0.0.0.0',
-    // publicPath: '/assets/',
+    devMiddleware: {
+      publicPath: '/assets/',
+    },
     historyApiFallback: true,
   },
   plugins: [
@@ -41,11 +46,9 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i, 
-        use: [
-          { loader: 'file-loader' },
-        ],
-    }
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
 };
