@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from './footer.js';
 import Form from './form.js';
-import Logo from './login.jpg';
+// import Logo from './login.jpg';
 
 const LoginPage = () => {
-  console.log('Its alive!');
+  console.log('Hello world 2');
   return (
     <div className="container-fluid h-100">
       <div className="row justify-content-center align-content-center h-100">
@@ -12,7 +12,7 @@ const LoginPage = () => {
           <div className="card shadow-sm">
             <div className="card-body row p-5">
               <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <img alt="Войти" style={{width: '200px', height: '200px'}} className="rounded-circle" src={Logo} />
+                <img alt="Войти" style={{width: '200px', height: '200px'}} className="rounded-circle" />
               </div>
               <Form />
             </div>
