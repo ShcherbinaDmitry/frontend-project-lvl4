@@ -1,2 +1,3 @@
+DEFAULT_PORT=process.env.port || 5000
 web: make start-backend
 frontend: make start-frontend
