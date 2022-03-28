@@ -15,9 +15,6 @@ module.exports = {
     publicPath: '/assets/',
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist', 'public'),
-    },
     compress: true,
     port: 8090,
     host: '0.0.0.0',

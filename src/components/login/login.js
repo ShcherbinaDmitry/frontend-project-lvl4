@@ -1,7 +1,8 @@
 import React from 'react';
 import Footer from './footer.js';
 import Form from './form.js';
-// import Logo from './login.jpg';
+import Logo from './login.jpg';
+import Register from './register.jpeg';
 
 const LoginPage = () => {
   console.log('Hello world 2');
@@ -12,7 +13,8 @@ const LoginPage = () => {
           <div className="card shadow-sm">
             <div className="card-body row p-5">
               <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <img alt="Войти" style={{width: '200px', height: '200px'}} className="rounded-circle" />
+                <img alt="Войти" src={Logo} style={{width: '200px', height: '200px'}} className="rounded-circle" />
+                
               </div>
               <Form />
             </div>
