@@ -7,4 +7,6 @@ const server = Fastify({
 
 app(server);
 
-server.listen(process.env.PORT || 8090);
+server.listen(process.env.PORT || 8090, () => {
+  
+});
