@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Container } from 'react-bootstrap';
 
-const Navbar = () => {
+const Bar = () => {
   const auth = true;
   const AuthButton = () => {
     return (
@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow-sm navbar navbar-expand-lg navbar-light bg-white">
-      <div className="container">
-        <NavLink className="navbar-brand" to="/">Hexlet Chat</NavLink>
+    <Navbar expand="lg" bg="white" className="shadow-sm">
+      <Container>
+        <Navbar.Brand href="/">Hexlet Chat</Navbar.Brand>
         <AuthButton />
-      </div>
-    </nav>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Bar;

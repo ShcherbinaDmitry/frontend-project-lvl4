@@ -2,7 +2,7 @@ import app from './plugin.js';
 import Fastify from 'fastify';
 
 const server = Fastify({
-  logger: true,
+  logger: false,
 });
 
 app(server);
