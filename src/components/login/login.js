@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
-import { Form, Button } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import UserContext from '../../context/userContext.js';
 import { Card } from 'react-bootstrap';
 import Logo from './login.jpg';
@@ -91,7 +91,7 @@ const LoginForm = (props) => {
 
 const LoginPage = () => {
   return (
-    <div className="container-fluid h-100">
+    <Container fluid className="h-100">
       <div className="row justify-content-center align-content-center h-100">
         <div className="col-12 col-md-8 col-xxl-6">
           <Card className="shadow-sm">
@@ -109,7 +109,7 @@ const LoginPage = () => {
           </Card>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
